@@ -1,0 +1,73 @@
+@if$contrast == true {
+    body{
+        background: $black;
+    }
+    $color-text : $white;
+
+    
+    $color-principal: grayscale(#0033A0);
+    $color-secundario: grayscale(#00A7C0);
+    $color-green: grayscale(#438643);
+    $color-orange: grayscale(orange);
+    $color-red: grayscale(red);
+
+    img{
+        filter: gryascale(100%);
+    }
+}
+%img0{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+// %notify{
+//     widows: 300px;
+//     padding: 20px;
+//     border: $color-principal solid 1px;
+//     border-radius: 0 0 25px 0;
+//     font-family: $font-general;
+//     display: flex;
+//     align-items: center;
+//     img{
+//         width: 40px;
+//         margin-left: 20px;
+//     }
+// }
+
+/*Este comentario aparece en css*/
+//Este comentario no aparece en css
+
+//@debug "hola mundo soy el color "+ $color-secundario
+
+
+//@debug "hola mundo estoy en "+ nth($ubicacion , 2)
+@each $var in $ubicacion {
+    .margin-#{$var}{
+        margin-#{$var}: 10px;
+    }
+}
+
+@for $var from 1 through 12 {
+    .grid-#{$var}{
+        width: (100%*$var)/12;
+        float: left;
+        //min-height: 100px;
+        // para aclarar colores
+        // background: lighten($color-secundario, $var) ;
+    }
+}
+
+$varWhile: 0;
+@while $varWhile <=10{
+    .items:nth-child(#{$varWhile}){
+        width: 100px;
+        height: 30px;
+        margin: 5px;
+        background: mix($color-green,$color-red,$varWhile*10);
+    }
+
+    $varWhile: $varWhile +1;
+}
+

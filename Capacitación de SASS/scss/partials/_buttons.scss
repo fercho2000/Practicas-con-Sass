@@ -1,0 +1,35 @@
+
+//selector padre
+.btn{
+    $heigthB:35px;
+    background-color: $color-principal;
+    color: $white;
+    padding: {
+        top: 0;
+        left: 20px;
+        bottom: 0;
+        right: 20px;
+    };
+    border-radius: $heigthB/2;
+    height: 35px;
+
+    border: {
+    width: 1px;
+    style: solid;
+    color: $color-secundario;
+    };
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($color-principal, 15%);
+        border: {
+            width: 3px;
+        };
+    }
+    aside &{
+        background-color: $color-secundario;
+        &:hover {
+            background-color:darken($color-secundario, 15%);
+        }
+    }
+}

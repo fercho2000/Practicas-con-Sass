@@ -1,0 +1,53 @@
+
+
+@mixin  notifies($bg){
+    width: 300px;
+    padding: 20px;
+    border: $bg solid 1px;
+    border-radius: 0 0 25px 0;
+    font-family: $font-general;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    background-color: rgba($bg, .6);
+    box-shadow: 0 0 20px rgba($black, .4);
+    img{
+        width: 40px;
+        margin-left: 20px;
+    }
+}
+@mixin latter($size) {
+    position: absolute;
+    bottom: 0;
+    width: $size/2;
+    height: $size/20;
+    font-size: 14px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: $color-secundario;
+    color: $white;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: $font-general;
+}
+
+@mixin  circle($size,$color, $person) {
+    width: $size;
+    height: $size;
+    background: {
+      color: $color;
+      image: url("../img/content/#{$person}.png");
+      @if$contrast == true {
+        image: url("../img/content/avatar.png");
+      }
+    };
+    background-size: cover;
+    position: relative;
+    border-radius: $size/2;
+    &:after{
+        content: $person;
+       @include latter($size);
+    }
+}

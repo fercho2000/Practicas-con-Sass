@@ -1,0 +1,11 @@
+
+footer{
+    background-color: mix($color-orange ,$color-secundario);
+    padding: 10px;
+    color: $white;
+    clear: both;
+    h5{
+        @extend %img0
+    }
+}
+

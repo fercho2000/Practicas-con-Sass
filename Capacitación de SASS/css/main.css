@@ -1,3 +1,8 @@
+footer h5 {
+  margin: 0;
+  padding: 0;
+}
+
 /*Este comentario aparece en css*/
 .margin-top {
   margin-top: 10px;
@@ -18,144 +23,151 @@
 .grid-1 {
   width: 8.3333333333%;
   float: left;
-  min-height: 100px;
 }
 
 .grid-2 {
   width: 16.6666666667%;
   float: left;
-  min-height: 100px;
 }
 
 .grid-3 {
   width: 25%;
   float: left;
-  min-height: 100px;
 }
 
 .grid-4 {
   width: 33.3333333333%;
   float: left;
-  min-height: 100px;
 }
 
 .grid-5 {
   width: 41.6666666667%;
   float: left;
-  min-height: 100px;
 }
 
 .grid-6 {
   width: 50%;
   float: left;
-  min-height: 100px;
 }
 
 .grid-7 {
   width: 58.3333333333%;
   float: left;
-  min-height: 100px;
 }
 
 .grid-8 {
   width: 66.6666666667%;
   float: left;
-  min-height: 100px;
 }
 
 .grid-9 {
   width: 75%;
   float: left;
-  min-height: 100px;
 }
 
 .grid-10 {
   width: 83.3333333333%;
   float: left;
-  min-height: 100px;
 }
 
 .grid-11 {
   width: 91.6666666667%;
   float: left;
-  min-height: 100px;
 }
 
 .grid-12 {
   width: 100%;
   float: left;
-  min-height: 100px;
 }
 
-.items {
+.items:nth-child(0) {
   width: 100px;
-  height: 50px;
+  height: 30px;
+  margin: 5px;
+  background: red;
+}
+
+.items:nth-child(1) {
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  background: #ec0d07;
+}
+
+.items:nth-child(2) {
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  background: #d91b0d;
+}
+
+.items:nth-child(3) {
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  background: #c72814;
+}
+
+.items:nth-child(4) {
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  background: #b4361b;
+}
+
+.items:nth-child(5) {
+  width: 100px;
+  height: 30px;
+  margin: 5px;
   background: #a14322;
 }
 
-.items {
+.items:nth-child(6) {
   width: 100px;
-  height: 50px;
-  background: #a14322;
+  height: 30px;
+  margin: 5px;
+  background: #8e5028;
 }
 
-.items {
+.items:nth-child(7) {
   width: 100px;
-  height: 50px;
-  background: #a14322;
+  height: 30px;
+  margin: 5px;
+  background: #7b5e2f;
 }
 
-.items {
+.items:nth-child(8) {
   width: 100px;
-  height: 50px;
-  background: #a14322;
+  height: 30px;
+  margin: 5px;
+  background: #696b36;
 }
 
-.items {
+.items:nth-child(9) {
   width: 100px;
-  height: 50px;
-  background: #a14322;
+  height: 30px;
+  margin: 5px;
+  background: #56793c;
 }
 
-.items {
+.items:nth-child(10) {
   width: 100px;
-  height: 50px;
-  background: #a14322;
+  height: 30px;
+  margin: 5px;
+  background: #438643;
 }
 
-.items {
-  width: 100px;
-  height: 50px;
-  background: #a14322;
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #424242;
+}
+p span {
+  color: #0033A0;
 }
 
-.items {
-  width: 100px;
-  height: 50px;
-  background: #a14322;
-}
-
-.items {
-  width: 100px;
-  height: 50px;
-  background: #a14322;
-}
-
-.items {
-  width: 100px;
-  height: 50px;
-  background: #a14322;
-}
-
-.items {
-  width: 100px;
-  height: 50px;
-  background: #a14322;
-}
-
-footer h5 {
-  margin: 0;
-  padding: 0;
+.cont-cuantify {
+  display: flex;
 }
 
 .card-circle-small {
@@ -290,15 +302,18 @@ footer h5 {
   margin-left: 20px;
 }
 
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: #424242;
-}
-p span {
-  color: #0033A0;
+.list-notification {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
+footer {
+  background-color: #80a660;
+  padding: 10px;
+  color: #ffffff;
+  clear: both;
+}
 .btn {
   background-color: #0033A0;
   color: #ffffff;
@@ -323,19 +338,6 @@ aside .btn {
 }
 aside .btn:hover {
   background-color: #006474;
-}
-
-.list-notification {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-footer {
-  background-color: #80a660;
-  padding: 10px;
-  color: #ffffff;
-  clear: both;
 }
 
 /*# sourceMappingURL=main.css.map */
