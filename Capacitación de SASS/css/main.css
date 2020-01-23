@@ -1,0 +1,202 @@
+/*Este comentario aparece en css*/
+.margin-top {
+  margin-top: 10px;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+footer h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.card-circle-small {
+  width: 100px;
+  height: 100px;
+  background-color: #225d72;
+  background-image: url("../img/content/pedro.png");
+  background-size: cover;
+  position: relative;
+  border-radius: 50px;
+}
+.card-circle-small:after {
+  content: "pedro";
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 5px;
+  font-size: 14px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: #00A7C0;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-circle-mediun {
+  width: 200px;
+  height: 200px;
+  background-color: #806c50;
+  background-image: url("../img/content/carmelita.png");
+  background-size: cover;
+  position: relative;
+  border-radius: 100px;
+}
+.card-circle-mediun:after {
+  content: "carmelita";
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 10px;
+  font-size: 14px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: #00A7C0;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-circle-big {
+  width: 300px;
+  height: 300px;
+  background-color: #801a50;
+  background-image: url("../img/content/juan.png");
+  background-size: cover;
+  position: relative;
+  border-radius: 150px;
+}
+.card-circle-big:after {
+  content: "juan";
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  height: 15px;
+  font-size: 14px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: #00A7C0;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.success {
+  width: 300px;
+  padding: 20px;
+  border: #438643 solid 1px;
+  border-radius: 0 0 25px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  background-color: rgba(67, 134, 67, 0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.success img {
+  width: 40px;
+  margin-left: 20px;
+}
+
+.warning {
+  width: 300px;
+  padding: 20px;
+  border: orange solid 1px;
+  border-radius: 0 0 25px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  background-color: rgba(255, 165, 0, 0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.warning img {
+  width: 40px;
+  margin-left: 20px;
+}
+
+.error {
+  width: 300px;
+  padding: 20px;
+  border: red solid 1px;
+  border-radius: 0 0 25px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.error img {
+  width: 40px;
+  margin-left: 20px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #424242;
+}
+p span {
+  color: #0033A0;
+}
+
+.btn {
+  background-color: #0033A0;
+  color: #ffffff;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-bottom: 0;
+  padding-right: 20px;
+  border-radius: 17.5px;
+  height: 35px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #00A7C0;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #001b54;
+  border-width: 3px;
+}
+aside .btn {
+  background-color: #00A7C0;
+}
+aside .btn:hover {
+  background-color: #006474;
+}
+
+.list-notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+footer {
+  background-color: #80a660;
+  padding: 10px;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */
